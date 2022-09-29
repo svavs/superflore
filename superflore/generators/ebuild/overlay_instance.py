@@ -98,7 +98,8 @@ class RosOverlay(object):
                 for pkg in chunk:
                     pkg_dir = '/tmp/ros-overlay/ros-{0}/{1}'.format(distro, pkg)
                     dock.add_bash_command('cd {0}'.format(pkg_dir))
-                    dock.add_bash_command('repoman manifest')
+                    # dock.add_bash_command('repoman manifest')
+                    dock.add_bash_command('pkgdev manifest')
                 try:
                     dock.run(show_cmd=True)
                     dock.clear_commands()

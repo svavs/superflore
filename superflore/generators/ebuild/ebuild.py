@@ -141,10 +141,10 @@ class Ebuild(object):
 
         if self.python_3 and not self.is_ros2:
             # enable python 2.7 and python 3.5
-            ret += self.get_python_compat(['2_7', '3_5', '3_6'])
+            ret += self.get_python_compat(['2_7', '3_8', '3_9'])
         elif self.python_3 or (self.distro == 'noetic'):
             # only use 3.5 - 3.9 for ROS 2 or noetic
-            ret += self.get_python_compat(['3_5', '3_6', '3_7', '3_8', '3_9'])
+            ret += self.get_python_compat(['3_8', '3_9', '3_10', '3_11'])
         else:
             # fallback to python 2.7
             ret += self.get_python_compat(['2_7'])
