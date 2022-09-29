@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.3.4](https://github.com/svavs/superflore/tree/v0.3.4) (2022-09-28)
+
+- Add Noetic support
+- Ebuild now with python target 3_9 and 3_10
+
 ## [v0.3.3](https://github.com/ros-infrastructure/superflore/tree/v0.3.3) (2021-11-20)
 
 [Full Changelog](https://github.com/ros-infrastructure/superflore/compare/v0.3.2...v0.3.3)
